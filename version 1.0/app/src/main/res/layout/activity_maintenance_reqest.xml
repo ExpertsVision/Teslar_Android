@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaintenanceReqestActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_title"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:text="Maintenance"/>
+        <ImageView
+            android:layout_width="55dp"
+            android:src="@drawable/leftarrow"
+            android:padding="14dp"
+            android:id="@+id/img_back"
+            android:layout_marginLeft="10dp"
+            android:layout_height="55dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/Rl_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subject"
+            android:textColor="#000000"
+            android:textSize="18dp"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/textViewTitle"
+        android:background="@drawable/edittext_bg"
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="textLongMessage"
+        android:textColorHint="#8b8378" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/Rl_1"
+            android:id="@+id/rl_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/explain"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000000"/>
+
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="gravity"
+        android:gravity="start"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_below="@+id/textViewDescription"
+        android:layout_marginTop="10dp"
+        android:inputType="text|textMultiLine"
+        android:textColorHint="#8b8378" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/rl_second"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="45dp"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/buttonViewRequests"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="VER SOLICITUDES"
+            android:textColor="#000000" />
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

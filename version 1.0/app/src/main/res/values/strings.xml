@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">Teslar</string>
+    <string name="home">INICIO</string>
+    <string name="next">SIGUENTE</string>
+    <string name="skip">OMITIR</string>
+    <string name="start">COMENZAR</string>
+    <string name="createAccount">Create Account</string>
+    <string name="deposit">Deposit</string>
+    <string name="mon">LUNES</string>
+    <string name="tue">MARTES</string>
+    <string name="wed">MIERCOLES</string>
+    <string name="thur">JUEVES</string>
+    <string name="fri">VIERNES</string>
+    <string name="sat">SABADO</string>
+    <string name="sun">DOMINGO</string>
+    <string name="devicename">DISPOSITIVO</string>
+    <string name="time1">Time</string>
+    <string name="totalebill">Total Estimated Bill:</string>
+    <string name="bill">Estimated-Bill</string>
+    <string name="totalbill">Total Bill:</string>
+    <string name="info">Solar Community</string>
+    <string name="appname">Teslar App</string>
+    <string name="login">INGRESAR</string>
+    <string name="power">Power Consumption</string>
+    <string name="billing">Billing</string>
+    <string name="scheduling">Scheduling</string>
+    <string name="request">Maintenance Request</string>
+    <string name="schedule">PROGRAMA</string>
+    <string name="type">TIPO DE DISPOSITIVO</string>
+    <string name="loginwithsn">LogIn with your social networks</string>
+    <string name="dropdownfortype">Choose Appliance Type</string>
+    <string-array name="Appliance_types">
+        <item>Air Conditioning</item>
+        <item>Heater</item>
+        <item>Griller</item>
+        <item>DishWasher</item>
+        <item>Garbage Disposal Unit</item>
+        <item>Gas Appliance</item>
+        <item>Refrigerator</item>
+        <item>Iron</item>
+        <item>Cleaner</item>
+        <item>Television</item>
+        <item>Boiler</item>
+        <item>Beverage Opener</item>
+    </string-array>
+    <string name="date">DIA DE INICIO</string>
+    <string name="yearly">Yearly</string>
+    <string name="name">NOMBRE DISPOSITIVO</string>
+    <string name="time">TIEMPO</string>
+    <string name="schedule2">Schedule</string>
+    <string name="mins">mins</string>
+    <string name="edit">Edit</string>
+    <string name="mrequest">Maintenance Request</string>
+    <string name="usage">USO</string>
+    <string name="submit">ENVIAR</string>
+    <string name="module">Maintenance Module</string>
+    <string name="resolved">Resolved</string>
+    <string name="pdate">Preferred Date:</string>
+    <string name="subject">ASUNTO</string>
+    <string name="explain">DESCRIPCION</string>
+    <string name="rating">Rating</string>
+    <string name="upperlimit">TIEMPO MAXIMO</string>
+    <string name="lowerlimit">TIEMPO MINIMO</string>
+    <string name="remove">Remove</string>
+    <string name="save">GUARDAR</string>
+    <string name="monthly">MENSUAL</string>
+    <string name="delete">Delete</string>
+    <string name="addmore">Add more</string>
+    <string name="dropdownforusage">Usage</string>
+    <string-array name="usage">
+        <item>1 DIA POR SEMANA</item>
+        <item>TODOS LOS DIAS</item>
+        <item>2 DIA POR SEMANA</item>
+        <item>3 DIA POR SEMANA</item>
+        <item>4 DIA POR SEMANA</item>
+        <item>5 DIA POR SEMANA</item>
+        <item>6 DIA POR SEMANA</item>
+
+    </string-array>
+    <string name="watts">Watts</string>
+    <string name="dateformat">mm/dd/yyyy</string>
+    <string name="timeformat">--:-- --</string>
+
+    <string-array name="Years">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+
+    </string-array>
+    <string-array name="Months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+
+    </string-array>
+
+    <string name="dropdownforhours">Hours</string>
+    <string-array name="hours">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+
+    </string-array>
+
+    <string name="dropdownforminutes">Minutes</string>
+    <string-array name="minutes">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+
+
+    </string-array>
+    <string name="h">h:</string>
+    <string name="m">m:</string>
+
+    <string name="id">Complaint ID:</string>
+    <string name="title">Title:</string>
+    <string name="sDate">Submitted Date:</string>
+    <string name="cDate">Closed Date:</string>
+    <string name="status">Status:</string>
+    <string name="details">Show Details:</string>
+
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".LoginActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/imageView"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/appname"
+            android:textAllCaps="true"
+            android:textColor="#eedfcc"
+            android:textStyle="normal"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/Linear1"
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/email"
+            android:hint="Email Address"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#8b8378" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/lock"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#8b8378" />
+
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/buttonLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/login" />
+    </LinearLayout>
+        <LinearLayout
+
+            android:id="@+id/Linear2"
+            android:layout_below="@+id/Linear1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <Button
+                android:id="@+id/buttonFacebook"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/facebook" />
+
+            <Button
+                android:id="@+id/buttonGoogle"
+                android:layout_width="35dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/goo" />
+
+            <Button
+                android:id="@+id/buttonTitter"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/t" />
+        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:id="@+id/tv_skip"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:text="Skip Login"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

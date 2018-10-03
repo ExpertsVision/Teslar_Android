@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "sam": {
+        "Appliance_Name": "Refrigerator",
+        "power": 0.25,
+        "Appliance_type": 1,
+        "Usage_weekly": 0,
+        "Total_time": 24,
+        "Lower_limit": "00:00",
+        "Upper_Limit": "24:00",
+        "Email": "sameer@eveati.com",
+        "user_id": 1111
+      },
+      "sam1": {
+        "Appliance_Name": "led lights",
+        "power": 0.01,
+        "Appliance_type": 1,
+        "Usage_weekly": 0,
+        "Total_time": 24,
+        "Lower_limit": "00:00",
+        "Upper_Limit": "24:00",
+        "Email": "sameer@eveati.com",
+        "user_id": 1111
+      },
+      "sam2": {
+        "Appliance_Name": "dishwasher",
+        "power": 1,
+        "Appliance_type": 0,
+        "Usage_weekly": 0,
+        "Total_time": 1.5,
+        "Lower_limit": "07:00",
+        "Upper_Limit": "22:00",
+        "Email": "sameer@eveati.com",
+        "user_id": 1111
+      },
+      "sam3": {
+        "Appliance_Name": "oven1",
+        "power": 1.05,
+        "Appliance_type": 0,
+        "Usage_weekly": 0,
+        "Total_time": 0.5,
+        "Lower_limit": "06:00",
+        "Upper_Limit": "09:00",
+        "Email": "sameer@eveati.com",
+        "user_id": 1111
+      },
+      "sam4": {
+        "Appliance_Name": "laundary",
+        "power": 0.8,
+        "Appliance_type": 3,
+        "Usage_weekly": 2,
+        "Total_time": 1.5,
+        "Lower_limit": "08:00",
+        "Upper_Limit": "20:00",
+        "Email": "sameer@eveati.com",
+        "user_id": 1111
+      }
+    }
+    ]
+ }

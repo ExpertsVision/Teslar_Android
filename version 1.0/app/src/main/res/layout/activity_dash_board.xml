@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/r_main"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/yellow"
+            android:layout_height="55dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_height="40dp"
+                android:id="@+id/image"
+                android:src="@drawable/menu"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Teslar"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="100dp"
+        android:id="@+id/ll_first"
+        android:orientation="horizontal"
+        android:layout_height="180dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/powercon"
+                android:layout_centerInParent="true"
+                android:onClick="seegraph"
+                android:id="@+id/imageView" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bill"
+                android:layout_centerInParent="true"
+                android:id="@+id/imageView2"
+                android:onClick="seebillgraph"/>
+        </RelativeLayout>
+
+         </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ll_first"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:id="@+id/dashBoard_linear_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/yellow">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/schedule"
+                        android:id="@+id/imageView3"
+                        android:layout_centerInParent="true"
+                        android:onClick="openscheduleform"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:id="@+id/dashBoard_linear_dispenserSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/yellow"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/request"
+                        android:id="@+id/imageView4"
+                        android:onClick="openrequestform" />
+                </RelativeLayout>
+            </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_holder"
+            layout="@layout/drawer_attatchment" />
+    </RelativeLayout>
+</RelativeLayout>

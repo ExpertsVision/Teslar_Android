@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eveati.sajid.teslar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.eveati.sajid.teslar.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.eveati.sajid.teslar.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+        <activity android:name="com.eveati.sajid.teslar.CreateAccountActivity" />
+        <activity android:name="com.eveati.sajid.teslar.InfoActivity" />
+        <activity android:name="com.eveati.sajid.teslar.Info2Activity" />
+        <activity android:name="com.eveati.sajid.teslar.Info3Activity" />
+        <activity android:name="com.eveati.sajid.teslar.MainInfoActivity" />
+        <activity android:name="com.eveati.sajid.teslar.PowerGraph" />
+        <activity android:name="com.eveati.sajid.teslar.MapActivity" />
+        <activity android:name="com.eveati.sajid.teslar.DashBoardActivity" />
+        <activity android:name="com.eveati.sajid.teslar.SchedulingActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.eveati.sajid.teslar.DevicesActivity" />
+        <activity android:name="com.eveati.sajid.teslar.EditDataActivity" />
+
+        <activity android:name="com.eveati.sajid.teslar.MaintenanceReqestActivity" />
+        <activity android:name="com.eveati.sajid.teslar.MaintenanceModuleActivity" />
+        <activity android:name="com.eveati.sajid.teslar.LineChartActivity" />
+        <activity android:name="com.eveati.sajid.teslar.LineChartMonthly" />
+        <activity android:name="com.eveati.sajid.teslar.DataExample" />
+        <activity android:name="com.eveati.sajid.teslar.WeeklySchedule" />
+        <activity android:name="com.eveati.sajid.teslar.LineChartBillMonthly" />
+        <activity android:name="com.eveati.sajid.teslar.LineChartBill" />
+        <activity android:name="com.eveati.sajid.teslar.JsonDataDisplay"></activity>
+    </application>
+
+</manifest>

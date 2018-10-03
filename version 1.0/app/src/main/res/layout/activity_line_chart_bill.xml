@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LineChartBill">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_title"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:text="Billing"/>
+        <ImageView
+            android:layout_width="55dp"
+            android:src="@drawable/leftarrow"
+            android:padding="14dp"
+            android:id="@+id/img_back"
+            android:layout_marginLeft="10dp"
+            android:layout_height="55dp" />
+        <ImageView
+            android:layout_width="55dp"
+            android:src="@drawable/menu_option"
+            android:padding="17dp"
+            android:id="@+id/img_option"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_height="55dp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_button"
+        android:layout_below="@+id/rl_title">
+        <TextView
+            android:id="@+id/textViewWatts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="15dp"
+            android:rotation="-90"
+            android:text="$"
+            android:textColor="@color/yellow"
+            android:textSize="18dp"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/textViewWatts"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lineChart">
+        </com.github.mikephil.charting.charts.LineChart>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="2"
+        android:id="@+id/ll_button"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/yearly"
+            android:onClick="onClick"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/home"
+            android:onClick="backtodashboard"
+            android:id="@+id/backtoDash"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

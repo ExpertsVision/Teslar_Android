@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/l1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/Rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/module"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#ff8c00"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/Rl_1">
+
+    <HorizontalScrollView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:scrollbars="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lisst1"
+                android:layout_height="40dp">
+            </ListView>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lisst"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
+</RelativeLayout>
+</LinearLayout>
+
+
+
+
+    <!--
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp">
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/list1"></ListView>
+
+
+
+            <ListView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+
+                android:id="@+id/list2"></ListView>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/list3"></ListView>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/list4"></ListView>
+
+            <ListView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+
+                android:id="@+id/list5"></ListView>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/list6"></ListView>
+
+        </LinearLayout>
+    </HorizontalScrollView>-->

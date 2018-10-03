@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/cross"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/cross"
+
+    android:padding="3dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/user">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/img_user"
+                android:src="@drawable/user_ic"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/circle_bg"
+                android:layout_marginLeft="-20dp"
+                android:id="@+id/img_upload_image"
+                android:layout_toRightOf="@+id/img_user"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_upload_image1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/plus"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/user"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/tv_username"
+                android:textColor="#ff8c00"
+                android:text="Cristobal Parrado"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_below="@+id/tv_username"
+                android:id="@+id/tv_b"
+                android:visibility="gone"
+                android:textColor="#7F7F7F"
+                android:paddingLeft="30dp"
+                android:text="Teslar Company CEO"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/user"
+            android:id="@+id/Rl_power_consumption"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/power" />
+            <TextView
+                android:id="@+id/btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image1"
+                android:background="#00ffffff"
+                android:text="CONSUMO ENERGETICO"
+                android:textColor="#7F7F7F"
+                android:textSize="15dp" />
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:background="#8e8d8d"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Rl_billing"
+            android:layout_below="@id/Rl_power_consumption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/bil" />
+            <TextView
+                android:id="@+id/btn_billing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image2"
+                android:background="#00ffffff"
+                android:text="CUENTA"
+                android:textColor="#7F7F7F"
+                android:textSize="15dp" />
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:background="#8e8d8d"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Rl_power_scheduling"
+            android:layout_below="@+id/Rl_billing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/sch" />
+            <TextView
+                android:id="@+id/btn_power_scheduling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image3"
+                android:background="#00ffffff"
+                android:text="PROGRMA ENERGETICO"
+                android:textColor="#7F7F7F"
+                android:textSize="15dp" />
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:background="#8e8d8d"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Rl_maintenence"
+            android:layout_below="@+id/Rl_power_scheduling"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/image323"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/tools" />
+            <TextView
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image323"
+                android:background="#00ffffff"
+                android:text="MANTENIMIENTO"
+                android:textColor="#7F7F7F"
+                android:textSize="15dp" />
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:background="#8e8d8d"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/Rl_logout"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#DDDDDD"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toLeftOf="@+id/btn_logout"
+                android:src="@drawable/lo"/>
+            <TextView
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SALIR"
+                android:layout_centerInParent="true"
+                android:textColor="#7F7F7F"
+                android:textSize="20dp" />
+        </RelativeLayout>
+         </RelativeLayout>
+</RelativeLayout>

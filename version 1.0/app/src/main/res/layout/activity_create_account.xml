@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_caccount"
+    tools:context=".CreateAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+        <LinearLayout
+        android:layout_below="@+id/imageView"
+        android:id="@+id/Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <Button
+            android:id="@+id/buttonDeposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_depositbtn"
+            android:text="@string/deposit"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="20dp"
+            android:textColor="#fffafa"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/buttonCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="@string/createAccount"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#ff8c00"/>
+    </LinearLayout>
+        <TextView
+            android:layout_below="@+id/Linear1"
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loginwithsn"
+            android:textColor="#fffafa" />
+
+        <LinearLayout
+            android:id="@+id/Linear2"
+            android:layout_below="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonFacebook"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:background="@drawable/facebook"/>
+            <Button
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/buttonGoogle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/goo" />
+            <Button
+                android:id="@+id/buttonTwitter"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/t" />
+
+        </LinearLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_below="@+id/Linear2"
+         android:gravity="end"
+         android:layout_marginRight="30dp">
+        <Button
+
+            android:id="@+id/buttonNext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/next"
+            android:onClick="sendd"
+            android:layout_centerHorizontal="true" />
+     </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
