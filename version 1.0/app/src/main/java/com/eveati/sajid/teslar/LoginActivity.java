@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     //private String url= "http://writinggems.com/api/auth/register";
     private JSONObject parameters;
     //private String url="http://18.216.115.254/login";
-    private String url="http://writinggems.com/api/auth/login";
+    private String url="http://expertsvision.site/api/auth/login";
     //String MY_PREFS_NAME;
     TextView tvSkip;
 

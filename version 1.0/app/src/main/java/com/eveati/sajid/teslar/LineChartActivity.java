@@ -47,7 +47,7 @@ public class LineChartActivity extends AppCompatActivity {
     ArrayList<GetPowerMonth_Model> daily;
     ArrayList<Entry> graph_values;
     ImageView imgBack,imgOption;
-    String baseurl="http://18.222.102.183/getuser/",url;
+    String baseurl="http://3.16.13.121/getuser/",url;
     SharedPreferences sharedPreferences;
     int user_id_local;
 

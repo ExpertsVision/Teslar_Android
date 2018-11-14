@@ -28,7 +28,7 @@ import java.util.Map;
 import com.eveati.sajid.teslar.Model.DatabaseHelper;
 public class MaintenanceReqestActivity extends AppCompatActivity {
     Button ButtonSubmit,ButtonView;
-    String url="http://writinggems.com/api/auth/complaint",preferreddate;
+    String url="http://expertsvision.site/api/auth/complaint",preferreddate;
     private RequestQueue requestQueue;
     DatabaseHelper mDatabaseHelper;
     Cursor ourdata;

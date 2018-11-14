@@ -36,7 +36,7 @@ public class WeeklySchedule extends AppCompatActivity {
     DatabaseHelper mDatabaseHelper;   // comment by sajid
     private  JSONObject dataObject,myobj;
     private RequestQueue requestQueue;
-    String url="http://18.222.102.183:9000/get_product";
+    String url="http://3.16.13.121:9000/get_product";
     TextView TextViewMonday;
 
     // JSONArray myarray;
